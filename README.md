@@ -6,3 +6,7 @@
 
 ## In semantic search: Sentence-Transformer for encoding  and  Numpy for dot product used
 
+<img width="1402" height="1122" alt="image" src="https://github.com/user-attachments/assets/1822890d-da93-4f66-939b-fa22b220b33d" />
+
+## chroma-db: open-source vector database used to store, manage, and search data based on semantic similarity.
+
