@@ -38,27 +38,80 @@ import numpy as np
 ```
 
 ```
- 1. load_and_chunk_documents()
- 2. setup_vector_database(chunks: List[Dict])
- 3. process_user_query(query: str)
- 4. search_vector_database(collection, query_embedding, top_k: int = 3)
- 5. augment_prompt_with_context(query: str, search_results: List[Dict]) -> str
- 6. generate_response(augmented_prompt: str) -> str
- 7. run_complete_rag_pipeline(query: str)
- 8. Final: Test all queries
-    # Run demo for each query
-    for i, query in enumerate(test_queries, 1):
-        print(f"\n{'='*60}")
-        print(f"DEMO {i}: {query}")
-        print(f"{'='*60}")
-        
-        try:
-            run_complete_rag_pipeline(query)
-        except Exception as e:
-            print(f"❌ Error in demo {i}: {e}")
-        
-        if i < len(test_queries):
-            input("\nPress Enter to continue to next demo...")
+def load_and_chunk_documents():
+    # Load documents
+    # Split documents into chunks
+    return chunks
+
+
+def setup_vector_database(chunks):
+    # Create vector database
+    # Store document chunks and embeddings
+    return collection
+
+
+def process_user_query(query):
+    # Convert user query into embedding
+    return query_embedding
+
+
+def search_vector_database(collection, query_embedding, top_k=3):
+    # Search vector database
+    return search_results
+
+
+def augment_prompt_with_context(query, search_results):
+    # Add retrieved context to the user query
+    return augmented_prompt
+
+
+def generate_response(augmented_prompt):
+    # Send augmented prompt to LLM
+    return response
+
+
+def run_complete_rag_pipeline(query):
+    # 1. Process user query
+    query_embedding = process_user_query(query)
+
+    # 2. Search vector database
+    search_results = search_vector_database(
+        collection,
+        query_embedding,
+        top_k=3
+    )
+
+    # 3. Add retrieved context to prompt
+    augmented_prompt = augment_prompt_with_context(
+        query,
+        search_results
+    )
+
+    # 4. Generate final response
+    response = generate_response(augmented_prompt)
+
+    print("\nFinal Answer:")
+    print(response)
+
+    return response
+
+
+# Test all queries
+
+for i, query in enumerate(test_queries, 1):
+
+    print("\n" + "=" * 60)
+    print(f"DEMO {i}: {query}")
+    print("=" * 60)
+
+    try:
+        run_complete_rag_pipeline(query)
+
+    except Exception as e:
+        print(f"❌ Error in demo {i}: {e}")
+
+    if i < len(test_queries):
+        input("\nPress Enter to continue to next demo...")
     
 
 ```
