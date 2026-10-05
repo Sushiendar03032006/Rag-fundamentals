@@ -10,3 +10,8 @@
 
 ## chroma-db: open-source vector database used to store, manage, and search data based on semantic similarity.
 
+<img width="1149" height="1369" alt="image" src="https://github.com/user-attachments/assets/70faffea-33d0-4cda-9d7a-3bbe9d894f21" />
+
+<img width="1077" height="467" alt="image" src="https://github.com/user-attachments/assets/0269c948-771c-4576-90be-3ea2fe18039b" />
+
+
