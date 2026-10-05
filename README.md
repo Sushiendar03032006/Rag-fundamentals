@@ -14,4 +14,7 @@
 
 <img width="1077" height="467" alt="image" src="https://github.com/user-attachments/assets/0269c948-771c-4576-90be-3ea2fe18039b" />
 
+## Complete Rag Pipeline
+<img width="1262" height="637" alt="image" src="https://github.com/user-attachments/assets/28cbe6bd-1332-4ec0-9b39-3706c16cf82e" />
+
 
