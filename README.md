@@ -17,6 +17,52 @@
 ## Complete Rag Pipeline
 <img width="1262" height="637" alt="image" src="https://github.com/user-attachments/assets/28cbe6bd-1332-4ec0-9b39-3706c16cf82e" />
 
+```
+ Document chunking
+ Vector database storage
+ Query processing
+ Vector search
+ Context augmentation
+ Response generation
+
+```
+
+```
+import os
+import time
+from typing import List, Dict, Any
+import chromadb
+from sentence_transformers import SentenceTransformer
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+import numpy as np
+```
+
+```
+ 1. load_and_chunk_documents()
+ 2. setup_vector_database(chunks: List[Dict])
+ 3. process_user_query(query: str)
+ 4. search_vector_database(collection, query_embedding, top_k: int = 3)
+ 5. augment_prompt_with_context(query: str, search_results: List[Dict]) -> str
+ 6. generate_response(augmented_prompt: str) -> str
+ 7. run_complete_rag_pipeline(query: str)
+ 8. Final: Test all queries
+    # Run demo for each query
+    for i, query in enumerate(test_queries, 1):
+        print(f"\n{'='*60}")
+        print(f"DEMO {i}: {query}")
+        print(f"{'='*60}")
+        
+        try:
+            run_complete_rag_pipeline(query)
+        except Exception as e:
+            print(f"❌ Error in demo {i}: {e}")
+        
+        if i < len(test_queries):
+            input("\nPress Enter to continue to next demo...")
+    
+
+```
+
 
 ## Caching:
 <img width="1277" height="706" alt="image" src="https://github.com/user-attachments/assets/7d588ee3-14e4-48f6-ad92-2a4f0d0d142b" />
