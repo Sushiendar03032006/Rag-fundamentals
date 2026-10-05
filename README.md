@@ -18,3 +18,20 @@
 <img width="1262" height="637" alt="image" src="https://github.com/user-attachments/assets/28cbe6bd-1332-4ec0-9b39-3706c16cf82e" />
 
 
+## Caching:
+<img width="1277" height="706" alt="image" src="https://github.com/user-attachments/assets/7d588ee3-14e4-48f6-ad92-2a4f0d0d142b" />
+<img width="656" height="596" alt="image" src="https://github.com/user-attachments/assets/ca0a69d2-1d85-405a-a039-f43a6aecb949" />
+
+## Monitoring:
+<img width="1272" height="677" alt="image" src="https://github.com/user-attachments/assets/e34318c8-5d0b-44da-a095-b7c5c8c2f437" />
+
+## Error Handling:
+<img width="1257" height="656" alt="image" src="https://github.com/user-attachments/assets/2afb13f3-efea-4466-8263-604e9b3bd353" />
+<img width="566" height="492" alt="image" src="https://github.com/user-attachments/assets/bba4924b-2d43-4281-80d0-3763df45abb7" />
+
+
+
+
+
+
+
